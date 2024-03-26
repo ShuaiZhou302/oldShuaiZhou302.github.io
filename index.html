@@ -41,60 +41,34 @@
             margin-bottom: 10px;
         }
 
-        /* 设置图片 */
-        .profile-picture-container {
-            position: absolute;
-            top: 140px; /* 调整图片相对顶部的距离 */
-            right: 160px; /* 调整图片相对右侧的距离 */
-            width: 160px; /* 设置图片宽度 */
-            margin-left: 20px; /* 设置图片距离左侧文本的距离 */
-            vertical-align: top; /* 将图片与上方对齐 */
-       }
-
-        .profile-picture {
-            display: block;
-            width: 100%;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .hi-text {
-            display: inline-block;
-            max-width: 400px; /* 设置文本最大宽度 */
-            word-wrap: break-word; /* 当文本超过最大宽度时自动换行 */
-        }
-
+        /* 设置容器 */
         .info-container {
-            position: absolute;
-            top: 140px; /* 调整信息容器相对顶部的距离 */
-            right: 20px; /* 调整信息容器相对右侧的距离 */
-            width: 400px; /* 设置信息容器宽度 */
+            display: flex; /* 使用 Flexbox 布局 */
+            align-items: flex-start; /* 元素顶部对齐 */
         }
 
-        .info-text {
-            margin-right: 20px; /* 调整信息文本的右边距 */
+        /* 设置图片 */
+        .profile-picture {
+            width: 200px; /* 图片宽度 */
+            height: auto; /* 自适应高度 */
+            margin-top: 150px;
+            margin-left: 20px; /* 图片左边距 */
         }
 
     </style>
 </head>
 <body>
 
-    <div class="profile-picture-container">
+    <div class="info-container">
+        <div>
+            <h1>David Zhou</h1>
+            <p>Shuai Zhou<br>周帅</p>
+            <p><span>Mail : </span>davidzhou718@gmail.com</p>
+            <p><span>Github profile : </span><a href="https://github.com/ShuaiZhou302">https://github.com/ShuaiZhou302</a></p>
+            <p>Hi! it's Shuai(david) here. Currently a sophomore student in South China university of Technology and majoring in robotics engineering. Interested in robotics (Multi-agent system & Motion Planning).</p>
+        </div>
         <img class="profile-picture" src="David.jpg" alt="Profile Picture">
     </div>
-
-    <h1>David Zhou</h1>
-
-    <p>Shuai Zhou<br>
-    周帅</p>
-    
-    <div>
-        <span>Mail : davidzhou718@gmail.com</span><br>
-        <span>Github profile : <a href="https://github.com/ShuaiZhou302">https://github.com/ShuaiZhou302</a></span><br>
-    </div>
-
-    <p class="hi-text">Hi! it's Shuai(david) here. Currently a sophomore student in South China university of Technology and majoring in robotics engineering. Interested in robotics (Multi-agent system & Motion Planning).</p>
 
     <h2>Experience </h2>
 
@@ -121,10 +95,7 @@
     <h2>Publication </h2>
     <p>null :( still working on it! wish me good luck!</p>
 
-    
     <br> 
-    
-    
     
     <br>
     <br>
