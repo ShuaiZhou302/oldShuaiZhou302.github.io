@@ -44,10 +44,12 @@
         /* 设置图片 */
         .profile-picture-container {
             position: absolute;
-            top: 8%; /* 相对顶部的距离 */
-            right: 20%; /* 相对右侧的距离 */
-            max-width: 20%; /* 相对于父容器的最大宽度 */
-        }
+            top: 140px; /* 调整图片相对顶部的距离 */
+            right: 160px; /* 调整图片相对右侧的距离 */
+            width: 160px; /* 设置图片宽度 */
+            margin-left: 20px; /* 设置图片距离左侧文本的距离 */
+            vertical-align: top; /* 将图片与上方对齐 */
+       }
 
         .profile-picture {
             display: block;
@@ -56,6 +58,24 @@
             border-radius: 50%;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         }
+
+        .hi-text {
+            display: inline-block;
+            max-width: 400px; /* 设置文本最大宽度 */
+            word-wrap: break-word; /* 当文本超过最大宽度时自动换行 */
+        }
+
+        .info-container {
+            position: absolute;
+            top: 140px; /* 调整信息容器相对顶部的距离 */
+            right: 20px; /* 调整信息容器相对右侧的距离 */
+            width: 400px; /* 设置信息容器宽度 */
+        }
+
+        .info-text {
+            margin-right: 20px; /* 调整信息文本的右边距 */
+        }
+
     </style>
 </head>
 <body>
@@ -69,12 +89,12 @@
     <p>Shuai Zhou<br>
     周帅</p>
     
-    <p>
-        <span>Mail : </span>davidzhou718@gmail.com<br>
-        <span>Github profile : </span><a href="https://github.com/ShuaiZhou302">https://github.com/ShuaiZhou302</a><br>
-        Hi! it's Shuai(david) here. Currently an sophomore student in South China university of Technology and majoring in robotics engineering. My research interests focusing on robotics and AI&ML Applications in engineering. <br>
+    <div>
+        <span>Mail : davidzhou718@gmail.com</span><br>
+        <span>Github profile : <a href="https://github.com/ShuaiZhou302">https://github.com/ShuaiZhou302</a></span><br>
+    </div>
 
-    </p>
+    <p class="hi-text">Hi! it's Shuai(david) here. Currently a sophomore student in South China university of Technology and majoring in robotics engineering. Interested in robotics (Multi-agent system & Motion Planning).</p>
 
     <h2>Experience </h2>
 
@@ -101,15 +121,7 @@
     <h2>Publication </h2>
     <p>null :( still working on it! wish me good luck!</p>
 
-    <h2>Project </h2>
-    <h3>GZIC Manual Online 华工手册</h3>
-    <p>
-        <div class = "core">
-        <span>Project website 项目网站:</span> <a href="https://www.gzic.online/">https://www.gzic.online/</a><br>
-        <span>Contribution 个人工作: </span> provide personal content.<br>
-        <span>Project brief 项目简介: </span>SCUT/GZIC Manual is a campus information aggregation project of South China University of Technology, hoping to provide information aggregation and inquiry services for students, staff, property logistics, family members, alumni and other people of SCUT.
-        </div>
-    </p>
+    
     <br> 
     
     
